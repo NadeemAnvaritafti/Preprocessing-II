@@ -1,1 +1,39 @@
 // Navigation Styles here
+.entirenav {
+    border-bottom: 2px dashed @navigation-border;
+
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+
+        @media @mobile {
+            flex-direction: column;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+            width: 45%;
+
+            @media @mobile {
+                width: 100%;
+                margin-top: 2%;
+                justify-content: space-around;
+            }
+
+            a {
+                font-family: 'Roboto', sans-serif;
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: @shark;
+
+                &:hover {
+                    color: @footer-bg;
+                }//closes pseudo anchor
+            }//closes anchor
+        }//closes div
+    }//closes nav
+}//closes entire nav section
+
